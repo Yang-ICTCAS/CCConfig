@@ -10,8 +10,13 @@ Claude Code 配置切换工具，支持快速切换 API 提供商。
 ## 安装 CLI
 
 ```bash
-npm install -g Yang-ICTCAS/CCConfig#cli
+git clone https://github.com/Yang-ICTCAS/CCConfig.git
+cd CCConfig/cli
+npm install
+npm link
 ```
+
+安装后即可使用 `ccfg` 命令。
 
 ## 使用
 
