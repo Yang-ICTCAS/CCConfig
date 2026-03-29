@@ -1,0 +1,44 @@
+{
+  "name": "claudecfg",
+  "version": "1.0.0",
+  "description": "CLI tool for switching Claude Code API configurations",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ccfg": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["claude", "claude-code", "api", "config", "switcher"],
+  "author": "yangxiaodong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangxiaodong/CCConfig.git"
+  },
+  "homepage": "https://github.com/yangxiaodong/CCConfig#readme",
+  "bugs": {
+    "url": "https://github.com/yangxiaodong/CCConfig/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "inquirer": "^9.3.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
